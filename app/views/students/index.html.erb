@@ -1,1 +1,4 @@
-<h1>index</h1>
+<h1>Students</h1>
+<% Student.all.each do |student| %>
+  <li><%student.first_name%> <%student.last_name%></li>
+<% end %>
